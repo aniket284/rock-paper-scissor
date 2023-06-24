@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500');
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	color: black;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	background: none;
+	padding: 30px;
+}
+
+header h1 {
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px plum;
+	text-align: center;
+	font-size: 50px;
+    font-stretch: ultra-expanded;
+}
+
+.score-board {
+	border: 3px solid purple;
+	width: 150px;
+	margin: 40px auto;
+	font-size: 40px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.badge {
+	text-transform: uppercase;
+	font-size: 35px;
+	padding: 10px 6px;
+}
+
+.badge:hover {
+    text-decoration: underline;
+}
+
+#user-label {
+	position: absolute;
+	color: darkorchid;
+	top: 50%;
+	left: -95%;
+	transform: translate(-10%, -50%);
+}
+
+#computer-label {
+    color: darkorchid;
+	position: absolute;
+	top: 50%;
+	right: -80%;
+	transform: translate(10%, -50%);
+}
+
+.result {
+	font-weight: 300;
+	text-align: center;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.result {
+	line-height: 50px;
+}
+
+.choices {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.choice {
+	display: inline-block;
+	border: 3px solid purple;
+	border-radius: 25%;
+	padding: 25px;
+	margin: auto 25px;
+	transition: all 0.2s ease;
+}
+
+.choice:hover {
+	background: plum;
+} 
+
+.choice img {
+	filter: invert(0%);
+}
+
+#action-message {
+	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 40px 0;
+}
+
+.winningStyles {
+	border: 5px solid lightgreen;
+	box-shadow: 0 0 25px green;
+}
+
+.losingStyles {
+	border: 5px solid #E21818;
+	box-shadow: 0 0 25px maroon;
+}
+
+.drawStyles {
+	border: 3px solid gray;
+	box-shadow: 0 0 20px grey;
+}
+
+sup {
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
+	text-align: center;
+	text-decoration: underline;
+	background: none;
+	text-shadow: 1px 1px 2px, 0 0 20px, 0 0 5px plum;
+}
